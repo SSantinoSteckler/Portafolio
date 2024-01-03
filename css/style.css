@@ -36,7 +36,7 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: clamp(1.5rem, 0.967rem + 1.067vw, 2.1rem);
+  font-size: clamp(1.5rem, 0.967rem + 1.067vw, 1.8rem);
   transition: all 0.2s ease-in;
 }
 
@@ -75,7 +75,7 @@ header nav ul li a:hover {
 }
 
 .main-index__section-title__article-text h1 {
-  font-size: clamp(2.3rem, -0.43rem + 5.981vw, 6rem);
+  font-size: clamp(2rem, -0.43rem + 5.981vw, 4.5rem);
   color: #20b9b9;
   width: 13.5ch;
   animation: animacion 1.6s steps(16), transparent step-end infinite alternate;
@@ -98,7 +98,7 @@ header nav ul li a:hover {
 }
 
 .main-index__section-title__article-text span {
-  font-size: clamp(1.5rem, 0.589rem + 2.243vw, 3rem);
+  font-size: clamp(1.3rem, 0.589rem + 2.243vw, 2.5rem);
   font-weight: 900;
   color: white;
   transition: all 0.3s ease-in-out;
@@ -110,7 +110,7 @@ header nav ul li a:hover {
 }
 
 .main-index__section-title__article-text p {
-  font-size: clamp(1rem, 0.414rem + 1.196vw, 1.7rem);
+  font-size: clamp(1rem, 0.414rem + 1.196vw, 1.5rem);
   color: rgba(255, 255, 255, 0.637);
 }
 .main-index__section-title__article-text div {
@@ -133,7 +133,7 @@ header nav ul li a:hover {
 }
 
 .main-index__section-title__article-image figure img {
-  max-width: clamp(20.625rem, -3.523rem + 30.909vw, 31.25rem);
+  max-width: clamp(20.625rem, -3.523rem + 30.909vw, 29.25rem);
   width: 100%;
   border-radius: 50%;
   background-color: #20b9b9;
@@ -205,3 +205,5 @@ header nav ul li a:hover {
     width: 80%;
   }
 }
+
+/* actualizacion */
