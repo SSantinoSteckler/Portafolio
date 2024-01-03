@@ -63,7 +63,7 @@ header nav ul li a:hover {
   padding: 30px;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 50px;
 }
 
 .main-index__section-title__article-text {
@@ -75,7 +75,7 @@ header nav ul li a:hover {
 }
 
 .main-index__section-title__article-text h1 {
-  font-size: clamp(2rem, -0.43rem + 5.981vw, 4.5rem);
+  font-size: clamp(2.2rem, -0.43rem + 5.981vw, 4.5rem);
   color: #20b9b9;
   width: 13.5ch;
   animation: animacion 1.6s steps(16), transparent step-end infinite alternate;
@@ -98,7 +98,7 @@ header nav ul li a:hover {
 }
 
 .main-index__section-title__article-text span {
-  font-size: clamp(1.3rem, 0.589rem + 2.243vw, 2.5rem);
+  font-size: clamp(1.3rem, 0.589rem + 2.243vw, 2.4rem);
   font-weight: 900;
   color: white;
   transition: all 0.3s ease-in-out;
