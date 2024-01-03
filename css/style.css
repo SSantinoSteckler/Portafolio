@@ -64,7 +64,6 @@ header nav ul li a:hover {
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding-top: clamp(9.375rem, -5.492rem + 13.83vw, 1.25rem);
 }
 
 .main-index__section-title__article-text {
@@ -72,6 +71,7 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 10px;
 }
 
 .main-index__section-title__article-text h1 {
@@ -133,7 +133,7 @@ header nav ul li a:hover {
 }
 
 .main-index__section-title__article-image figure img {
-  max-width: clamp(20rem, 11.268rem + 21.495vw, 34.375rem);
+  max-width: clamp(20.625rem, -3.523rem + 30.909vw, 31.25rem);
   width: 100%;
   border-radius: 50%;
   background-color: #20b9b9;
@@ -199,5 +199,9 @@ header nav ul li a:hover {
   .nav.visible {
     opacity: 1;
     visibility: visible;
+  }
+
+  .main-index__section-title__article-image figure img {
+    width: 80%;
   }
 }
