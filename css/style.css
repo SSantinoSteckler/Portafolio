@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url(../assets/bg-header-desktop.png);
   background-repeat: no-repeat;
@@ -60,7 +64,8 @@ header nav ul li a:hover {
   min-height: 80vh;
   display: flex;
   flex-direction: row;
-  padding: 30px;
+  padding: 20px;
+  margin-bottom: 130px;
   justify-content: center;
   align-items: center;
   gap: 50px;
@@ -77,12 +82,27 @@ header nav ul li a:hover {
 .main-index__section-title__article-text h1 {
   font-size: clamp(2.2rem, -0.43rem + 5.981vw, 4.5rem);
   color: #20b9b9;
-  width: 13.5ch;
-  animation: animacion 1.6s steps(16), transparent step-end infinite alternate;
+  width: 11.5ch;
+  animation: animacion 1.6s steps(19), transparent step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
 
-  /* border-right: 3px solid #24afaf; */
+  border-right: 3px solid #24afaf;
+}
+
+hr {
+  background-color: #20b9b9;
+  border: none;
+  height: 6px;
+  width: 100%;
+  animation: animacion 1.3s steps(200), transparent step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+hr:hover {
+  background-color: white;
 }
 
 @keyframes animacion {
@@ -153,9 +173,11 @@ header nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 200px;
   gap: 50px;
   padding: 25px;
+  padding-top: 100px;
+  background-color: #181d33;
+  /* border-top: solid 4px #20b9b9; */
 }
 
 .main-index__section-tecnologias__article-cards {
@@ -166,7 +188,7 @@ header nav ul li a:hover {
   flex-direction: column;
   gap: 20px;
   max-width: 1200px;
-  width: 50%;
+  width: 70%;
   box-shadow: 0 0 10px black;
 
   border: 2px solid #20b9b9;
@@ -203,8 +225,13 @@ header nav ul li a:hover {
   border-radius: 20px;
   width: 100%;
   cursor: pointer;
-  /* padding: 6px; */
+  padding: 6px;
   box-shadow: 0 0 10px;
+  transition: all 0.1s ease-in;
+}
+
+.main-index__section-tecnologias__article-cards__div-barra:hover {
+  background-color: white;
 }
 
 .main-index__section-tecnologias__article-cards__div-barra div {
@@ -237,7 +264,7 @@ header nav ul li a:hover {
   background-color: white;
   width: 24px;
   border-radius: 50%;
-  border: solid 2px black;
+  border: solid 3px black;
   cursor: pointer;
 }
 .main-index__section-tecnologias__article-cards__div-porcentaje {
@@ -265,10 +292,10 @@ header nav ul li a:hover {
     align-items: center;
   }
   .main-index__section-tecnologias__article-cards {
-    width: 100%;
+    width: 90%;
   }
   .main-index__section-tecnologias {
-    padding-top: 150px;
+    padding-top: 130px;
   }
 }
 
@@ -297,6 +324,7 @@ header nav ul li a:hover {
     padding: 2rem;
     transition: all 0.2s ease-in;
     box-shadow: 0px 0px 50px 1000px rgba(0, 0, 0, 0.411);
+    z-index: 999;
   }
   header nav ul {
     flex-direction: column;
@@ -309,6 +337,8 @@ header nav ul li a:hover {
   }
   .main-index__section-tecnologias {
     gap: 30px;
+    padding: 10px;
+    padding-top: 130px;
   }
 
   .main-index__section-title__article-image figure img {

@@ -26,21 +26,24 @@
   <body>
     <header>
       <div>
-        <span> SSteckler</span>
+        <span>SSteckler</span>
       </div>
       <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
       <nav class="nav" id="nav">
         <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
         <ul>
-          <li><a id="link" href="#">Sobre Mi</a></li>
-          <li><a id="link" href="#">Tecnologias</a></li>
+          <li><a id="link" href="#section1">Sobre Mi</a></li>
+          <li><a id="link" href="#section2">Tecnologias</a></li>
           <li><a id="link" href="#">Proyectos</a></li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
-      <section class="main-index__section-title">
-        <article class="main-index__section-title__article-text">
+      <section class="main-index__section-title" id="section1">
+        <article
+          class="main-index__section-title__article-text"
+          data-aos="fade-right"
+        >
           <h1>Santino Steckler</h1>
           <span> Desarollador <span> HTML </span> & <span>CSS </span></span>
           <p>
@@ -70,7 +73,12 @@
           </figure>
         </article>
       </section>
-      <section class="main-index__section-tecnologias">
+      <hr />
+      <section
+        class="main-index__section-tecnologias"
+        data-aos="fade-right"
+        id="section2"
+      >
         <article class="main-index__section-tecnologias__article-cards">
           <div class="main-index__section-tecnologias__article-cards__div-text">
             <img src="./assets/html-5 (1).png" alt="html" />
