@@ -169,13 +169,15 @@ hr:hover {
 
 .main-index__section-tecnologias {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 50px;
   padding: 25px;
-  padding-top: 100px;
-  padding-bottom: 130px;
+  padding-top: 115px;
+  padding-bottom: 115px;
+
   background-color: #181d33;
   /* border-top: solid 4px #20b9b9; */
 }
@@ -188,10 +190,10 @@ hr:hover {
   flex-direction: column;
   gap: 20px;
   max-width: 1200px;
-  width: 70%;
+  width: 100%;
   box-shadow: 0 0 10px black;
 
-  border: 2px solid #20b9b9;
+  border: 2px solid white;
   transition: all 0.3s ease-in;
 }
 
@@ -247,6 +249,9 @@ hr:hover {
   flex-direction: row;
   justify-content: flex-end;
   height: 17px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .main-index__section-tecnologias__article-cards__div-barra.css div {
@@ -262,7 +267,8 @@ hr:hover {
 
 .main-index__section-tecnologias__article-cards__div-barra div span {
   background-color: white;
-  width: 18px;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
   border: solid 3px black;
   cursor: pointer;
@@ -288,7 +294,7 @@ hr:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #181d33;
-  padding-bottom: 100px;
+  padding-bottom: 180px;
   padding-top: 180px;
 }
 
@@ -322,7 +328,8 @@ hr:hover {
   a:nth-child(2)
   button {
   border: none;
-  width: 30%;
+  max-width: 116px;
+  width: 100%;
   border-radius: 30px;
   background-color: #20b9b9;
   color: white;
@@ -379,6 +386,74 @@ hr:hover {
   border-radius: 0px 13px 13px 0px;
   /* opacity: 0.5; */
 }
+
+.footer-index {
+  background-color: #181d33;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-index__article-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-index__article-contact div:first-child span {
+  font-size: clamp(2.2rem, 0.6rem + 3.556vw, 3rem);
+  font-weight: 900;
+}
+
+.footer-index__article-contact div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-index__article-contact div:nth-child(2) span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: clamp(1rem, 0.6rem + 0.889vw, 1.2rem);
+}
+.footer-index__article-contact div:nth-child(2) span svg {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-index__article-contact div:nth-child(2) span svg path {
+  fill: white;
+}
+
+.footer-index__article-red div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.footer-index__article-red div svg {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  box-sizing: content-box;
+}
+.footer-index__article-red div svg {
+  width: clamp(1.25rem, 0.5rem + 1.667vw, 1.625rem);
+  height: clamp(1.25rem, 0.5rem + 1.667vw, 1.625rem);
+  transition: all 0.2s ease-in;
+}
+.footer-index__article-red div svg:hover {
+  background-color: #20b9b9;
+}
+
+.footer-index__article-red div svg path {
+  fill: white;
+}
 /*************************************************************************************************************/
 
 @media screen and (max-width: 1080px) {
@@ -396,7 +471,8 @@ hr:hover {
   }
 
   .main-index__section-tecnologias {
-    padding-top: 130px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .main-index__section-tecnologias__article-cards {
     width: 80%;
@@ -409,6 +485,10 @@ hr:hover {
   }
   .main-index__section-proyectos__article-card {
     width: 90%;
+  }
+  .footer-index {
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
@@ -451,8 +531,8 @@ hr:hover {
   .main-index__section-tecnologias {
     gap: 30px;
     padding: 10px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .main-index__section-title__article-image figure img {
@@ -472,6 +552,7 @@ hr:hover {
   }
   .main-index__section-tecnologias__article-cards__div-barra div span {
     width: 16px;
+    height: 16px;
   }
   .main-index__section-proyectos__article-card {
     flex-direction: column-reverse;
@@ -500,6 +581,10 @@ hr:hover {
   .main-index__section-proyectos__article-card__div-content__div-text
     p:nth-child(2) {
     display: none;
+  }
+  .footer-index {
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

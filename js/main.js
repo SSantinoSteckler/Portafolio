@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     nav.classList.remove('visible');
   });
 
-  // Agrega el evento de clic a cada enlace
   links.forEach((link) => {
     link.addEventListener('click', () => {
       nav.classList.remove('visible');
